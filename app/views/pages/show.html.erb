@@ -11,8 +11,15 @@
 	    ================================== */
 	 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
 
+
 	 .narrow {
 	     display: none;
+	 }
+
+	 #image {
+	     background-image: url(<%=imgage_url('1000.png')%>); 
+	     width: 100%;
+	     background-size: contain;
 	 }
 	 /* Responsive
 	    ==================================== */
@@ -26,6 +33,11 @@
 	     .broad {
 		 display: none;
 	     }
+	     #image {
+		 background-image: url(<%=imgage_url('250.png')%>);
+		 width: 100%;
+		 background-size: contain;
+	     }
 	 }
 	 
 	</style>
@@ -36,7 +48,6 @@
 	<p class="narrow">You screen width is less than 600 px.
 	</p>
 
-	<%= image_tag '1000.png', :class => "broad" %>
-	<%= image_tag '250.png', :class => "narrow" %>
+	<div id="image"></div>
     </body>
 </html>
