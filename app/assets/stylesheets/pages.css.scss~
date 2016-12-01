@@ -1,0 +1,54 @@
+/* Variables
+	    ================================== */
+/* Tables
+	    ================================== */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+
+html {
+  height: 100%;
+  background-color: #EEE;
+}
+body {
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 800px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2em;
+  background-color: white;
+  text-align: center;
+}
+
+.narrow {
+    display: none;
+}
+
+#image {
+    width: 100%;
+    height: 1000px;
+    background-image: url(image-path('1000.png')); 
+    background-size: contai;
+    background-repeat: no-repeat;
+}
+/* Responsive
+	    ==================================== */
+@media all and (max-width: 700px) {
+    .narrow {
+	width: 100% !important;
+    }
+    .narrow {
+	display: block;
+    }
+    .broad {
+	display: none;
+    }
+    #image {
+	width: 100%;
+	height: 700px;
+	background-image: url(image-path('250.png'));
+	background-size: contain;
+	background-repeat: no-repeat;
+    }
+}
+
